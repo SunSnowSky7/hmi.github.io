@@ -1,5 +1,5 @@
 // 设置目标日期
-const targetDate = new Date('2026-03-15T00:00:00Z'); // 请根据实际情况修改为正确的回国日期
+const targetDate = new Date('2026-03-15T00:00:00+07:00'); // 请根据实际情况修改为正确的回国日期
 
 // 更新倒计时的函数
 function updateCountdown() {
