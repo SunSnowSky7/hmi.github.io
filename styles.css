@@ -1,0 +1,59 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('./images/background.jpeg') no-repeat center center fixed;
+    background-size: 100% 100%;
+    color: hsl(226, 52%, 75%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background: rgba(0, 0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+h1 {
+    font-size: 3em;
+    margin: 0;
+    animation: glow 2s infinite alternate;
+}
+
+.characters {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.character {
+    width: 100px;
+    height: 100px;
+    margin: 0 10px;
+    animation: float 5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff;
+    }
+    to {
+        text-shadow: 0 0 20px #ff0, 0 0 30px #ff0;
+    }
+}
+
+@keyframes float {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
